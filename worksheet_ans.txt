@@ -1,0 +1,98 @@
+Machine Learning:
+=================
+
+1. b) 4
+2. d) 1, 2 and 4
+3. d) formulating the clustering problem
+4. a) Euclidean distance
+5. b) Divisive clustering
+6. d) All answers are correct
+7. a) Divide the data points into groups
+8. b) Unsupervised learning
+9. d) All of the above
+10. a) K-means clustering algorithm
+11. d) All of the above
+12. a) Labeled data
+
+13. Clustering is an Unsupervised Learning algorithm that groups data samples into k clusters. The algorithm yields the k clusters based on k averages of centroids that roam around the data set trying to center themselves — one in the middle of each cluster. We have to go through the data points one-by-one, measuring the distance between each point and the centroids. We have to groups the data point with the closest centroid. Then re-calculate the means by the values of the centroids; the new value of a centroid is the sum of all the points belonging to that centroid divided by the number of data points in the group. We should keep doing the same steps until no centroid changes its value in re-calculation. This means that each centroid has centered itself in the middle of its cluster.
+
+14. To measure the quality of a clustering, we can use the average silhouette coefficient value of all objects in the data set. The silhouette plot displays a measure of how close each point in one cluster is to points in the neighboring clusters
+
+15. Clustering is the task of dividing the data points into a small number of groups such that data points in the same groups are more similar data points in the same group than those in other groups.
+	Types:
+	1. Hard Clustering: Each data point either belongs to a cluster completely or not.
+	2. Soft Clustering: Instead of putting each data point into a separate cluster, a likelihood of that data point to be in those clusters is assigned.
+
+
+	1. Density-Based Clustering: It connects the highly-dense areas into clusters, and the shapes are formed as long as the dense region can be connected. It connects the areas of high densities into clusters. The dense areas in data space are divided from each other by sparser areas.
+	2. Distribution Model-Based Clustering: The data is divided based on the probability of how a dataset belongs to a particular distribution. 
+	3. Partitioning Clustering :It is a type of clustering that divides the data into different groups with same type of data points. It is also known as the centroid-based method.
+	4. Hierarchical Clustering: The dataset is divided into clusters to create a tree-like structure, which is also called a dendrogram. The observations or any number of clusters can be selected by cutting the tree at the correct level. 
+	5. Fuzzy Clustering: It is soft method in which a data object may belong to more than one group or cluster. Each dataset has a set of membership coefficients, which depend on the degree of membership to be in a cluster. 
+	
+	
+SQL:
+=====
+
+1. a & d
+2. a, c, e
+3. b
+4. b
+5. a
+6. c
+7. b
+8. b
+9. d
+10. c
+
+11. Data Warehouse: It used to connect and analyze business data from different sources. It is storage of a large amount of information by a business which is designed for query and analysis instead of transaction processing. It is a process of transforming data into information and making it available to users in a timely manner.
+
+12. OLTP: Online transaction processing supports transaction-oriented applications in a 3-tier architecture. OLTP administers day to day transaction of an organization.
+		The primary objective is data processing and not data analysis
+		Consists only operational current data.
+		The size of the data is relatively small as the historical data is archived.
+		
+	OLAP: Online Analytical Processing, the systems allow users to analyze database information from multiple database systems at one time.
+	The primary objective is data analysis and not data processing.
+	Consists of historical data from various Databases.
+	Large amount of data is stored
+	
+13. Characters of Data Warehouse:
+	1. Subject oriented : A data warehouse is always a subject oriented as it delivers information about a topic instead of organization’s current operations. All are organized based on the use.
+	2. Integrated : shared entity to scale the all similar data from the different databases. Inconsistency will be removed
+	3. Time-Varient: various time limit which are structured between the large datasets and are held in OLTP. The data collected in a data warehouse is acknowledged over a given period and provides historical information. Data are normly time series
+	3. Non-Volatile : data is not erased or deleted when new data is inserted. Data is read-only, only updated regularly. 
+	
+14. Star Schema :  It is form of dimensional model, in which data are organized into facts and dimensions. A fact is an event that is counted or measured. A dimension includes reference data about the fact.
+
+15. SET is a data type of String object that can hold zero or more, or any number of string values. They must be chosen from a predefined list of values specified during table creation.
+
+
+
+
+Statistics:
+=============
+1. a) True
+2. a) Central Limit Theorem
+3. b) Modeling bounded count data
+4. d) All of the mentioned
+5. c) Poisson
+6. b) False
+7. b) Hypothesis
+8. a) 0
+9. c) Outliers cannot conform to the regression relationship
+10. The normal distribution is a probability function that describes how the values of a variable are distributed. It is a symmetric distribution where most of the observations cluster around the central peak and the probabilities for values further away from the mean taper off equally in both directions.
+11. Imputation with mean : Missing data is replaced by mean of the column
+	Imputation with median : Missing data is replaced by mean of the column
+	Imputation with Mode: Missing data is replaced with mode of the column
+	
+12. A/B testing : It is a way to compare the two versions of a variable to find out which performs better in a controlled environment. It is an analytical method for making decisions that estimates population parameters based on sample statistics.
+
+13. Bad practice in general. 
+	If just estimating means: mean imputation preserves the mean of the observed data
+	Leads to an underestimate of the standard deviation
+	Distorts relationships between variables by “pulling” estimates of the correlation toward zero
+
+14. attempts to model the relationship between two variables by fitting a linear equation to observed data. y = mx + c
+15. Discriptive : Descriptive statistics deals with the presentation and collection of data. This is usually the first part of a statistical analysis. It is usually not as simple as it sounds, and the statistician needs to be aware of designing experiments, choosing the right focus group and avoid biases that are so easy to creep into the experiment.
+	Inferential Statistics : Inferential statistics, as the name suggests, involves drawing the right conclusions from the statistical analysis that has been performed using descriptive statistics. In the end, it is the inferences that make studies important and this aspect is dealt with in inferential statistics.
