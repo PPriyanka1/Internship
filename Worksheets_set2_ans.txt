@@ -1,0 +1,53 @@
+Machine Learning
+=================
+1. a) 2 Only
+2. d) 1, 2 and 4
+3. a) True
+4. a) 1 only
+5. b) 1
+6. b) No
+7. a) Yes
+8. d) All of the above
+9. d) 1 and 3
+10. a) K-means clustering algorithm
+11. d) All of the above
+12. d) All of the above
+13. yes, because the mean changes according to the extreeme value.
+14. because of density-based, expectation-maximisation
+15. no, because it is non-deterministic algorithm as its selects data points randomly as initial centroids
+
+SQL:
+=====
+1. D) Unique
+2. D) None of them
+3. A) Each entry in the primary key uniquely identifies each entry or row in the table
+4. D) All of the above
+5. B) Foreign Key
+6. C) 2
+7. A) one to many
+8. D) many to many
+9. A) delivery id C) delivery date
+10. C) 3
+11. B) many to one
+12. C) Table
+13. A) Insert in to
+14. B) Unique C) Primary Key
+15. B) A blood group can only contain characters
+
+STATSTICS:
+===========
+1. C) both
+2. C) 12
+3. D) All of the above
+4. A) Exhaustive
+5. B) Summarizing and explaining a specific set of data
+6. B) Data set
+7. C) 1
+8. B) Scatterplot
+9. D) Analysis of variance
+10. A) Z-score
+11. C) mean
+12. D) 400005.2
+13. C) Median
+14. A) Descriptive and inferences
+15. D) H-L
