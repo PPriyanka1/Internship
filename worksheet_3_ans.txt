@@ -1,0 +1,79 @@
+Machine Learning
+=================
+1. d. All of the above
+2. d. None
+3. c. Reinforcement learning and Unsupervised learning
+4. b. The tree representing how close the data points are to each other
+5. d. None
+6. c. k-nearest neighbour is same as k-means
+7. d. 1, 2 and 3
+8. a. 1 only
+9. a. 2
+10. b. Given a database of information about your users, automatically group them into different market segments.
+11. a
+12. b
+13. Clustering is important because it is usually used to classify data into structures that are more easily understood and manipulated. It is grouping a set of objects so that objects in the same group are more similar to each other than to those in other groups
+14. a) K-means clustering algorithm can be significantly improved by using a better initialization technique, and by repeating (re-starting) the algorithm.
+	b) When the data has overlapping clusters, k-means can improve the results of the initialization technique.
+
+STATISTICS
+===========
+1. b) Total Variation = Residual Variation + Regression Variation
+2. c) binomial
+3. a) 2
+4. b) Type-II error
+5. b) Size of the test
+6. b) Increase
+7. b) Hypothesis
+8. d) All of the mentioned
+9. a) 0
+10 Bayes' Theorem: P(A|B) =  P(A) P(B|A)P(B)
+	Which tells us:	 	how often A happens given that B happens, written P(A|B),
+	When we know:	 	how often B happens given that A happens, written P(B|A)
+ 	 	and how likely A is on its own, written P(A)
+ 	 	and how likely B is on its own, written P(B)
+11. Z-Score: A z-score describes the position of a raw score in terms of its distance from the mean, when measured in standard deviation units
+	Formula: z = (score - mean)/SD
+12. t-test: It is a statistical test that is used to compare the means of two groups
+13. Percentile indicate the percentage of scores that fall below a particular value
+14. (ANOVA): Analysis of variance is an analysis tool used in statistics that splits an observed aggregate variability found inside a data set into two parts: systematic factors and random factors.
+15. ANOVA is useful when analyzing the multi-item scales common in market research. Testing t-test three or more variables
+
+
+
+
+MYSQl
+=======
+1. CREATE TABLE customers
+( customerNumber int NOT NULL PRIMARY KEY,
+  customerName char(20) NOT NULL,
+  contactLastName char(50),
+  contactFirstName char(50),
+  phone varchar(12);
+  addressLine1 char(50),
+  addressLine2 char(50),
+  city char(50),
+  state char(25),
+  postalcode varchar(10),
+  country char(20),
+  salesRepEmployeeNumber varchar(20),
+  creditLimit varchar(20)  
+);
+
+2. CREATE TABLE Orders 
+	(orderNumber int NOT NULL PRIMARY KEY,
+	orderDate varchar(20),
+	requiredDate varchar(20),
+	shippedDate varchar(20),
+	status varchar(5),
+	comments varchar(30),
+	customerName varchar(20) FOREIGN KEY REFERENCES customers(customerName)
+	)
+	
+3. select * from Orders;
+4. select comments from Orders;
+6. select employeNumber, lastName, firstName from Employee;
+7. select orderNumber, customerName from Orders;
+8. selct customerName, salesRepEmployeeNumber from customers;
+9. selct paymentDate, amount from payments;
+10. select productName, MSRP, productDescription from products;
