@@ -1,0 +1,66 @@
+Machine Learning
+=================
+1. C) between -1 and 1
+2. C) Recursive feature elimination
+3. C) hyperplane
+4. D) Support Vector Classifier
+5. C) old coefficient of ‘X’ ÷ 2.205
+6. B) increases
+7. A) Random Forests reduce overfitting
+8. D) All of the above
+9. A) Identifying developed, developing and under-developed countries on the basis of factors like GDP, poverty index, employment rate, population and living index
+10. B) max_features
+11. Outliers: An outlier is an observation that lies an abnormal distance from other values in a random sample from a population.
+	IQR: IQR is the range between the first and the third quartiles namely Q1 and Q3: IQR = Q3 – Q1. Any observations that are more than 1.5 IQR below Q1 or more than 1.5 IQR above Q3 are considered outliers
+12. Bagging is a method of merging the same type of predictions. Boosting is a method of merging different types of predictions.
+13. The adjusted R-squared has been adjusted for the number of predictors in the model. The adjusted R-squared increases only if the new term improves the model more than would be expected by chance. It decreases when a predictor improves the model by less than expected by chance.
+14. Standarization: the transformation of features by subtracting from mean and dividing by standard deviation
+	Normalization: It is used to transform features to be on a similar scale. 
+15. Cross validation is a statistical method used to estimate the performance (or accuracy) of machine learning models. When dealing with a Machine Learning task, you have to properly identify the problem so that you can pick the most suitable algorithm which can give you the best score.
+	Advantage: we make use of all data points and hence it is low bias
+	Disadvantage: it leads to higher variation in the testing model as we are testing against one data point.
+
+
+Stastics
+=========
+1. The central limit Theorem states that the distribution of sample means approximates a normal distribution as the sample size gets larger. It is important because it allows us to safely assume that the sampling distribution of the mean will be normal in most cases
+2. Sampling is a process used in statistical analysis in which a predetermined number of observations are taken from a larger population.
+	2 types:
+	a. Probability sampling involves random selection, allowing you to make strong statistical inferences about the whole group.
+	b. Non-probability sampling involves non-random selection based on convenience or other criteria, allowing you to easily collect data.
+3. Type 1 error, in statistical hypothesis testing, is the error caused by rejecting a null hypothesis when it is true. Type II error is the error that occurs when the null hypothesis is accepted when it is not true.
+4. A normal distribution is an arrangement of a data set in which most values cluster in the middle of the range and the rest are the extreme.
+5. Covariance indicates the direction of the linear relationship between variables. Correlation measures both the strength and direction of the linear relationship between two variables. 
+6. Univariate statistics summarize only one variable at a time. Bivariate statistics compare two variables. Multivariate statistics compare more than two variables.
+7. The technique used to determine how independent variable values will impact a particular dependent variable under a given set of assumptions is defined as sensitive analysis. The sensitivity is calculated by dividing the percentage change in output by the percentage change in input.
+8. Hypothesis testing is an act in statistics whereby an analyst tests an assumption regarding a population parameter. 
+	The null hypothesis (H0), is a statement about a population parameter, such as the population mean, that is assumed to be true. The null hypothesis is a starting point.
+	An alternative hypothesis (H1) is a statement that directly contradicts a null hypothesis by stating that that the actual value of a population parameter is less than, greater than, or not equal to the value stated in the null hypothesis.
+	Null hypothesis is that the mean is equal to x. A two-tailed test will test both if the mean is significantly greater than x and if the mean significantly less than x.
+	
+9. Quantitative data are data about numeric variables. Qualitative data are measures of 'types' and may be represented by a name, symbol, or a number code.
+10. Range is the spread of your data from the lowest to the highest value in the distribution.
+	The interquartile range is the best measure of variability for skewed distributions or data sets with outliers.
+	
+11. The term bell curve also called as normal distribution. In a bell curve, the center contains the greatest number of a value and, therefore, it is the highest point on the arc of the line. This point is referred to the mean, but in simple terms, it is the highest number of occurrences of an element.
+12. By using IQR, boxplot or z-scores to find the outliers
+13. p-values are used in hypothesis testing to help decide whether to reject the null hypothesis. The smaller the p-value, the more likely you are to reject the null hypothesis. The p-value is a proportion: if your p-value is 0.05, that means that 5% of the time you would see a test statistic at least as extreme as the one you found if the null hypothesis was true.
+14. the binomial probability is nCx⋅px⋅(1−p)n−x .
+15. (ANOVA): Analysis of variance is an analysis tool used in statistics that splits an observed aggregate variability found inside a data set into two parts: systematic factors and random factors.
+
+
+
+
+SQL:
+======
+1. 
+
+3. select productName from products where MSRP = (select MIN(MSRP) from products);
+4. select productName from products where qualityInStock = (select MIN(qualityInStock) from products);
+5. select productName, count(distinct productCode) from products group by productName order by 2 DESC;
+6. 
+7. select customernumber, customerName from customer where city = 'Melbourne';
+8. select customerName from customer where customerName LIKE 'N%';
+9. select customerName from customer where phone LIKE '7%' and city = 'Las Vegas';
+10. select customerName from customer where creditLimit < 1000 and (city = “Las Vegas” or city = ”Nantes” or city = “Stavern);
+11. select orderNumber from orders where quantityordered < 10;
