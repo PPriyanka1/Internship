@@ -1,0 +1,54 @@
+Machine Learning
+===================
+1. Residual Sum of Squared is a better measure of goodness of fit model in regression because it measures the overall difference between your data and the values predicted by your estimation model
+2. 	TSS: The coefficient of determination is used as a measure of how well a regression line explains the relationship between a dependent variable (Y) and an independent variable (X). The closer the coefficient of determination is to 1, the more closely the regression line fits the sample data
+	ESS: It tells how much of the variation between observed data and predicted data is being explained by the model proposed.
+	RSS: This expression is also known as unexplained variation and is the portion of total variation that measures discrepancies (errors) between the actual values of Y and those estimated by the regression equation
+	TSS = ESS + RSS
+3. Regularisation is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid overfitting
+4. Gini Impurity is a measurement of the likelihood of an incorrect classification of a new instance of a random variable, if that new instance were randomly classified according to the distribution of class labels from the data set.
+5. yes because they are very data intensive - that is, they examine the data in a lot of ways. At each node, they look at every possible split of every independent variable.
+6. Ensemble technique is a machine learning technique that combines several base models in order to produce one optimal predictive model.
+7. 	Bagging technique can be an effective approach to reduce the variance of a model, to prevent over-fitting and to increase the accuracy of unstable models. On the other hand, Boosting enables us to implement a strong model by combining a number of weak models together.
+	In bagging various training data subsets are randomly drawn with replacement from the whole training dataset. In Boosting, Each new subset contains the components that were misclassified by previous models
+8. The out-of-bag (OOB) error is the average error for each calculated using predictions from the trees that do not contain in their respective bootstrap sample.
+9. K-Fold CV is where a given data set is split into a K number of sections/folds where each fold is used as a testing set at some point
+10. Hyperparameters are crucial as they control the overall behaviour of a machine learning model. The ultimate goal is to find an optimal combination of hyperparameters that minimizes a predefined loss function to give better results.
+11. Large learning rates puts the model at risk of overshooting the minima so it will not be able to converge
+12. No
+13. In adaboost, an additive model where shortcomings of previous models are identified by high-weight data points. In Gradient Boosting, an additive model where shortcomings of previous models are identified by the gradient.
+	In adaboost, each classifier has different weights assigned to the final prediction based on its performance. In gradient Boosting, all classifiers are weighed equally and their predictive capacity is restricted with learning rate to increase accuracy.
+14. The bias-variance tradeoff is a decomposition of the expected prediction error of a machine learning model into a bias term and a variance term
+
+
+Statistics:
+=============
+1. d) Expected
+2. c) Frequencies
+3. c) 6
+4. d) Poission distribution
+5. c) F Distribution
+6. b) Hypothesis
+7. a) Null Hypothesis
+8. a) Two tailed
+9. b) Research Hypothesis
+10. a) np
+
+
+SQL:
+=====
+1. select * from movie;
+2. SELECT  title FROM movie WHERE runtime = (SELECT MAX(runtime) FROM movie);
+3. SELECT  title FROM movie WHERE revenue = (SELECT MAX(revenue) FROM movie);
+4. SELECT  title FROM movie WHERE budget = (SELECT MAX(budget) FROM movie);
+5. SELECT title, cast_order, characeter_name, person_name, gender FROM movie NATURAL JOIN movie_cast NATURAL JOIN person NATURAL JOIN gender;
+6. 
+7. select genre_id, genre_name from genre;
+8. select `language_name`, count(`movie_id`) as no_of_movies from movie_language as a inner join language as b on a.`language_id` = b.`language_id` group by b.`language_id`;
+9.
+
+10. select title from movie order by popularity desc limit 10;
+11. SELECT title FROM movie ORDER BY revenue DESC LIMIT 2,1;
+12. select * from movie where movie_status = 'rumoured';
+13. 
+15. SELECT title FROM movie ORDER BY budget DESC LIMIT 20;
