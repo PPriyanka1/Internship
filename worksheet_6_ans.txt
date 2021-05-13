@@ -1,0 +1,58 @@
+Machine Learning
+====================
+1. A) High R-squared value for train-set and High R-squared value for test-set.
+2. B) Decision trees are highly prone to overfitting.
+3. C) Random Forest
+4. A) Accuracy
+5. A) Model A
+6. A) Ridge D) Lasso
+7. B) Decision Tree
+8. B) L2 regularization
+
+9. A) We initialize the probabilities of the distribution as 1/n, where n is the number of data-points B) A tree in the ensemble focuses more on the data points on which the previous tree was not performing well
+10. The adjusted R-squared increases only if the new term improves the model more than would be expected by chance. It decreases when a predictor improves the model by less than expected by chance.
+11. Ridge uses l2 where as lasso go with l1. In ridge regression, the penalty is the sum of the squares of the coefficients and for the Lasso, it’s the sum of the absolute values of the coefficients. It’s a shrinkage towards zero using an absolute value (l1 penalty) rather than a sum of squares(l2 penalty).
+12. Variance inflation factor (VIF) is a measure of the amount of multicollinearity in a set of multiple regression variables. with values around 1, we are in good shape, and can proceed with our regression.
+13. Feature scaling is essential for machine learning algorithms that calculate distances between data. the range of all features should be normalized so that each feature contributes approximately proportionately to the final distance.
+14. the Mean Absolute Error and the Root Mean Squared Error
+15. Accuracy: (1000 + 1200)/ (1000+1200+50+250) = 0.88
+	Sensitivity: 1200/(1200+250) = 0.826
+	Specificity: 1000/(1000+50) = 0.9524
+	Precision: 1200/(1200+50) = 0.96
+	
+
+Statistics:
+===========
+1. d) All of the mentioned
+2. c) Continuous
+3. a) pdf
+4. c) mean
+5. a) variance
+6. d) none of the mentioned
+7. c) 0 and 1
+8. b) bootstrap
+9. b) summarized
+10. Histograms are preferred to determine the underlying probability distribution of a data. Box plots on the other hand are more useful when comparing between several data sets.
+11. Accuracy Quantify, Optimize and able to iterable
+12. accessed using Hypothesis Testing
+14. If we have a skewed distribution, the median is often the best measure of central tendency
+15. Likelihood measures the goodness of fit of a statistical model to a sample of data for given values of the unknown parameters.
+
+
+MYSQL:
+=========
+1. C. Rollback D. Savepoint
+2. A. Create C. Drop D. Alter
+3. B. SELECT NAME FROM SALES;
+4. C. Authorizing Access and other control over Database
+5. B. Column Alias
+6. B. COMMIT
+7. A. Parenthesis - (...).
+8. B. REPORT
+9. D. All of the mentioned
+10. A. ASC
+11. Denormalization involves adding redundant data to a normalized database to reduce certain types of problems with database queries that combine data from various tables into a single table.
+12. A SQL cursor is a database object that retrieves data from result sets one row at a time
+13. Five types of SQL queries are 1) Data Definition Language (DDL) 2) Data Manipulation Language (DML) 3) Data Control Language(DCL) 4) Transaction Control Language(TCL) and, 5) Data Query Language (DQL)
+14. SQL Constraints are rules used to limit the type of data that can go into a table, to maintain the accuracy and integrity of the data inside table.
+15. Auto-increment allows a unique number to be generated automatically when a new record is inserted into a table. 
