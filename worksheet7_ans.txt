@@ -1,0 +1,53 @@
+Machine Learning
+==================
+1. D) All of the above
+2. D) All of the above
+3. B) The regularization will decrease
+4. C) both A & B
+5. D)None of the above
+6. C) Both of them
+7. B) Bias will decrease, Variance increase
+8. B) model is overfitting
+10. Random forest replaces the data/population used 
+11. Feature Scaling is a technique to standardize the independent features present in the data in a fixed range. It is performed during the data pre-processing to handle highly varying magnitudes or values or units to construct the tree and also the explanatory variables are bootstrapped so that partition is not done on the same important variable. standard Scaler & Normalize
+12. Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. 
+13. Accuracy can be a useful measure if we have the same amount of samples per class but if we have an imbalanced set of samples accuracy isn't useful at all
+14. F-Score: F1-score, is a measure of a model's accuracy on a dataset. F-Score = TP/ (TP + 1/2(FP+FN))
+15. The fit() function calculates the values of these parameters. The transform function applies the values of the parameters on the actual data and gives the normalized value. The fit_transform() function performs both in the same step.
+
+
+Statstics:
+============
+1. b) 0.135
+2. d) 0.53
+3. c) 0.745
+4. b) 0.577
+5. c) 0.6
+6. b) 0.40
+7. c) 0.33
+8. b) 0.22
+9. a) 0.66
+10. a) 0.33
+11. a) 0.34
+12. c) 0.78
+13. d) 0.25
+15. c) 1/2
+
+
+SQL:
+=====
+1. B. Candidate keys
+2. A, C
+3. C. Insert
+4. C. ORDERBY
+5. C. SELECT
+6. c. 3NF
+7. C. All of the above can be done by SQL
+8. B. DML
+9. B. Table
+10. A. 1 NF
+11. A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+12. Inner Join, Outer Join, Left Join, Right Join & Self Join
+13. SQL Server is a relational database management system, or RDBMS, developed and marketed by Microsoft
+14. Primary keys constraint uniquely identifies each record in a table. Primary keys must contain UNIQUE values, and cannot contain NULL values
+15. ETL stands for Extract, Transform and Load, which is a process used to collect data from various sources, transform the data depending on business rules/needs and load the data into a destination database.
